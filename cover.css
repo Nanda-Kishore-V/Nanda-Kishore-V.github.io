@@ -163,7 +163,8 @@ body {
   .masthead,
   .mastfoot,
   .cover-container,
-  .container-fluid {
+  .container-fluid,
+  .inner {
     width: 850px;
   }
 }
