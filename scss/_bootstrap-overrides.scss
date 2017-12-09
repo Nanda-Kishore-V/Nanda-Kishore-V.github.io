@@ -27,3 +27,31 @@
 .btn-xl {
   padding: 15px 30px;
 }
+
+.carousel-inner img {
+  margin: auto;
+}
+
+.carousel-indicators {
+  bottom:-50px;
+}
+
+// .carousel-indicators li {
+//     display: inline-block;
+//     width: 10px;
+//     height: 10px;
+//     text-indent: 0;
+//     cursor: pointer;
+//     border: none;
+//     border-radius: 50%;
+//     background-color: #000000;
+//     margin: 5px;
+//     // box-shadow: inset 1px 1px 1px 1px rgba(0,0,0,0.5);
+// }
+// .carousel-indicators .active {
+//     width: 10px;
+//     height: 10px;
+//     background-color: #ffffff;
+//     margin: 5px;
+//     // box-shadow: inset 1px 1px 1px 1px rgba(0,0,0,0.5);
+// }

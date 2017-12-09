@@ -24,6 +24,7 @@
     <!-- Custom styles for this template -->
     <link href="../css/creative.min.css" rel="stylesheet">
 
+    <link rel="shortcut icon" href="favicon.ico" />
   </head>
 
   <body class="bg-dark" id="page-top">
@@ -98,10 +99,9 @@
           </p>
           <h4 class="text-dark">Algorithm:</h4>
           <p class="text-justify" style="color: #555;">
-            The robots are moved in straight line for a distance decided by the random algorithm and
-            then turns either 10 degrees to the right or the left. The same procedure is repeated till
-            the robots are in danger of collision with obstacles or other robots. <br>
-
+            The robots are dispersed in an optimized way. Once one of the robot reached the goal, the central
+            master plans the path for other robots using A-star algorithm and splines are used to generate
+            trajectories for the other robots.<br>
           </p>
         </div>
     </section>
