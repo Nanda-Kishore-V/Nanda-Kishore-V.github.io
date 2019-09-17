@@ -41,10 +41,10 @@
               <a class="nav-link js-scroll-trigger" href="../index.html#about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="../index.html#academics">Academics</a>
+              <a class="nav-link js-scroll-trigger" href="../index.html#projects">Projects</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="../index.html#research">Research</a>
+              <a class="nav-link js-scroll-trigger" href="../index.html#academics">Academics</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="../index.html#resume">Resume</a>
@@ -61,7 +61,7 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-8 mx-auto text-center">
-            <h2 class="section-heading text-white">Autonomous Driving using F1/10th Car</h2>
+            <h2 class="section-heading text-white">Autonomous Driving in CARLA</h2>
             <hr class="primary">
           </div>
             <!-- <a class="btn btn-default btn-xl js-scroll-trigger" href="#services">Get Started!</a> -->
@@ -81,20 +81,29 @@
         <div class="row">
           <h4 class="text-dark">Description:</h4>
           <p class="text-justify" style="color: #555;">
-            The objective of the project is to implement Model Predictive Controller for trajectory tracking
-            on F 1/10th car using a Jetson TX2 module. The model uncertainity will be taken into consideration
-            while implementing the controller.
+            The objective of this personal project was to implement navigation and
+            control algorithms from scratch for an autonomous vehicle in simulation.
           </p>
-          <h4 class="text-dark">Current Progress:</h4>
-          <br>
-          <ul class="text-justify" style="color: #555;">
-            <li> Localization of the robot is done with particle filter algorithm using the LIDAR mounted on the robot.
-            <li> One of the major sources of uncertainity for wheeled robots is tire slip. Quantification of the slip for various velocities is being done.
+          <h4 class="text-dark">Library:</h4>
+          <ul class="text-left" style="color: #555;">
+            <li>Developed a library of commonly used high-level planners and controllers. The high-level planners include A*, RRT, RRT*. The controllers
+            include PID,  Stanley controller, LQR and MPC</li>
+          </ul>
+          <h4 class="text-dark">CARLA simulation:</h4>
+          <ul class="text-left" style="color: #555;">
+            <li>Implemented a hierarchical motion planner for a car in CARLA simulation</li>
+            <ul>
+              <li> FSM-based (Finite State Machine) behavioral planner was implemented for four scenarios: Lane Following, Lead Vehicle Following, Decelerating to Stop
+                and Stopping at STOP sign.</li>
+                <li> Trajectory rollout-based low-level planner was implemented for avoiding parked vehicles</li>
+                <li> Trajectory rollout was implemented using quintic spirals to obtain smooth curvature</li>
+            </ul>
+            <li>Link to the github repo: <a href="https://github.com/Nanda-Kishore-V/AlgosForRobotics">Library of planners and controllers</a></li>
           </ul>
         </div>
     </section>
 
-    <!-- <section class="bg-dark call-to-action">
+    <section class="bg-dark call-to-action">
       <h3 class="text-center light">Photos</h3>
       <hr class="primary">
     </section>
@@ -103,31 +112,14 @@
         <ol class="carousel-indicators">
           <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
           <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-          <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-          <li data-target="#carousel-example-generic" data-slide-to="3"></li>
-          <li data-target="#carousel-example-generic" data-slide-to="4"></li>
-          <li data-target="#carousel-example-generic" data-slide-to="5"></li>
         </ol>
         <div class="carousel-inner slide" role="listbox" data-ride="carousel">
           <div class="carousel-item active">
-            <img class="d-block img-responsive center-block img-fluid" src="../img/projects/crazyswarm/act.png">
+            <img class="d-block img-responsive center-block img-fluid" src="../img/projects/CARLA/Follow.png">
           </div>
           <div class="carousel-item">
-            <img class="d-block img-responsive center-block img-fluid" src="../img/projects/crazyswarm/USC_vertical.png">
+            <img class="d-block img-responsive center-block img-fluid" src="../img/projects/CARLA/Overtake.png">
           </div>
-          <div class="carousel-item">
-            <img class="d-block img-responsive center-block img-fluid" src="../img/projects/crazyswarm/Hello.jpg">
-          </div>
-          <div class="carousel-item">
-            <img class="d-block img-responsive center-block img-fluid" src="../img/projects/crazyswarm/USC_lightwriting.jpg">
-          </div>
-          <div class="carousel-item">
-            <img class="d-block img-responsive center-block img-fluid" src="../img/projects/crazyswarm/N.jpg">
-          </div>
-          <div class="carousel-item">
-            <img class="d-block img-responsive center-block img-fluid" src="../img/projects/crazyswarm/NIT.jpg">
-          </div>
-        </div>
         <a class="carousel-control-prev" href="#carousel-example-generic" role="button" data-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="sr-only">Previous</span>
@@ -137,7 +129,7 @@
           <span class="sr-only">Next</span>
         </a>
       </div>
-    </div> -->
+    </div>
 
     <!-- Bootstrap core JavaScript -->
     <script src="../vendor/jquery/jquery.min.js"></script>

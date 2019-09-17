@@ -41,10 +41,10 @@
               <a class="nav-link js-scroll-trigger" href="../index.html#about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="../index.html#academics">Academics</a>
+              <a class="nav-link js-scroll-trigger" href="../index.html#projects">Projects</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="../index.html#research">Research</a>
+              <a class="nav-link js-scroll-trigger" href="../index.html#academics">Academics</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="../index.html#resume">Resume</a>
@@ -61,11 +61,9 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-8 mx-auto text-center">
-            <h2 class="section-heading text-white">Stability Analysis of Bipedal Robots</h2>
+            <h2 class="section-heading text-white">State Estimation and Control of Bipedal Robot</h2>
             <hr class="primary">
           </div>
-            <!-- <a class="btn btn-default btn-xl js-scroll-trigger" href="#services">Get Started!</a> -->
-          <!-- </div> -->
         </div>
       </div>
     </section>
@@ -74,55 +72,26 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
-            <!-- <h2 class="section-heading">Academics</h2>
-            <hr class="primary"> -->
           </div>
         </div>
       </div>
       <div class="container">
         <div class="row">
-          <h4 class="text-dark">Abstract:</h4>
-          <p class="text-justify" style="color: #555;">
-            This project will focus on the formal analysis of bipedal locomotion to characterize its
-            stability in terms of viable-capture basin. Bipedal locomotion can be described using a multitude
-            of models ranging from simple models to highly complex models. While it is difficult to analyze
-            complex models, simple models sacrifice some capability for simplicity. Formal analysis of the
-            different models will give a better understanding of the differences between the models and the
-            capability of each model. For this project, two aspects of this formal analysis will be explored.
-            One is extending the abstract control policy derived for the simple model to the full
-            rigid-body model. The other focus is on calculating the viable-capture basin for mid-level models
-            which lie in between the simple models and the complex models.
-          </p>
           <h4 class="text-dark">Description:</h4>
           <p class="text-justify" style="color: #555;">
-            For a bipedal robot, balancing and step recovery are crucial to prevent damaging falls. In the
-            research literature, fall prevention is studied using a simple model of the robot, traditionally, a
-            linear inverted pendulum model (LIPM). The simplicity of LIPM comes from some assumptions
-            made on the bipedal robot which impose restrictions on the control input. This, in turn, reduces
-            the ability of the robot to prevent falls from certain initial conditions. On the other end of the
-            spectrum, the viable-capture basins of high-dimensional models are difficult to analyze. The
-            mid-level models are a trade-off between simplicity and accuracy.
+            The ultimate objective of my research work in DAIR Lab is to develop safety-critical controllers for balancing
+            of a bipedal robot. The safety-critical controller is formulated as a Sum-Of-Squares (SOS) program. The controller
+            will be tested on the bipedal robot named Cassie developed by Agility Robotics.
           </p>
-          <p class="text-justify" style="color: #555;">
-            Viable-capture basin is one way of comparing the stability of different models. Though it is
-            difficult to calculate the viable-capture basin analytically, it can be numerically approximated by
-            the use of Sum-Of-Squares (SOS) programming. The volume of the inner and outer
-            approximation of the viable-capture basin can be compared to study the relative stability of the
-            different models. The objective of this project will be two-fold.
-          </p>
+          <h4 class="text-dark">Work on Cassie:</h4>
+          <ul class="text-justify" style="color: #555;">
+            <li>Due to the lack of force sensors on the feet, implemented contact estimation for the feet using Quadratic Programming</li>
+            <li>Implemented Contact-Aided Invariant EKF for pose estimation of the pelvis of the bipedal robot in simulation (drake) and on the real robot</li>
+            <li>Generated  trajectories  for  walking  and  standing  using  reduced-order  models  and  tracked  the  trajectories  using Partial Feedback Linearization</li>
+          </ul>
+          <h4 class="text-dark">Safety-Critical Controller:</h4>
           <ul class="text-justify" style="color:#555;">
-            <li>One of the two directions for this independent study will be the calculation of viable-
-                capture basin for a mid-level model - a linear inverted pendulum model with swing leg
-                dynamics. Instead of encapsulating the swing leg dynamics by maximum step length
-                and minimum step time, swing leg dynamics will be incorporated into the model to obtain
-                a better approximation of the full-dimensional model while maintaining some level of
-                simplicity. This will be done through the use of SOS programming.
-            <li>The second direction will be the control of full-dimensional model in simulation using the
-                simple models. The control inputs applied to the simple models cannot be directly
-                applied to the full-dimensional model. Also, the control inputs for the full-dimensional
-                model must be calculated to mimic the restrictions imposed by the simple model. In the
-                future, control of the physical robot will also be done but it is out-of-scope for this
-                independent study.
+            <li>Formulated a SOS program to find a controller for the reduced-order model along with the region of attraction for the hybrid model.</li>
           </ul>
         </div>
     </section>

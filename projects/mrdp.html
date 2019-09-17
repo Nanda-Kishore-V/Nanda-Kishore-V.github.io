@@ -41,10 +41,10 @@
               <a class="nav-link js-scroll-trigger" href="../index.html#about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="../index.html#academics">Academics</a>
+              <a class="nav-link js-scroll-trigger" href="../index.html#projects">Projects</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="../index.html#research">Research</a>
+              <a class="nav-link js-scroll-trigger" href="../index.html#academics">Academics</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="../index.html#resume">Resume</a>
@@ -84,9 +84,9 @@
           <h4 class="text-dark">Description:</h4>
           <p class="text-justify" style="color: #555;">
             Mobile Robotics Development Platform is a differential-drive robot capable of
-            mapping an environment using low-cost sensors and navigating in it. It provides a
-            platform to test perception and navigation algorithms. The robot uses ROS, running on an
-            on board computer, as an interface between the sensors and actuators.
+            mapping an environment using low-cost sensors and navigating using the generated map.
+            It provides a platform to test perception and navigation algorithms. The robot uses ROS -
+            running on an on-board computer - as an interface between the sensors and actuators.
           </p>
           <h4 class="text-dark">Robot Design:</h4>
           <p class="text-justify" style="color: #555;">
@@ -101,9 +101,7 @@
             odometry from wheel encoders are used. A package called gmapping in ROS is used to perform the
             mapping of the environment. <br>
             More than one sensor is used to increase the accuarcy of the system as the sensors are prone
-            to noise. The optical wheel encoder is used to perform dead reckoning and obtain the pose of the robot.
-            A gyroscope is also used to obtain the yaw of the robot and these sensor values are used in an
-            extended Kalman filter to estimate the pose.
+            to noise. IMU and kinect sensor information is fused to improve the accuracy of the map generated.
           </p>
         </div>
     </section>

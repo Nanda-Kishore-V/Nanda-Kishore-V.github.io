@@ -41,10 +41,10 @@
               <a class="nav-link js-scroll-trigger" href="../index.html#about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="../index.html#academics">Academics</a>
+              <a class="nav-link js-scroll-trigger" href="../index.html#projects">Projects</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="../index.html#research">Research</a>
+              <a class="nav-link js-scroll-trigger" href="../index.html#academics">Academics</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="../index.html#resume">Resume</a>
@@ -84,11 +84,10 @@
           <h4 class="text-dark">Description:</h4>
           <p class="text-justify" style="color: #555;">
             The system comprises of a set of four omnidirectional robots endowed with the ability to
-            play soccer. The robots are fabricated in complicance with the Small Sized League (SSL)
-            rules. The robots are designed to perform various functions including passing,
+            play soccer. The robots are designed to perform various functions including passing,
             shooting, dribbling and goalkeeping.<br>
-            The central master localizes the robots incorporating feedback from overhead camera. The master
-            communicates to the robots through WiFi communication.
+            The central computer localizes the robots incorporating feedback from overhead camera. Control commands
+            are sent from the central computer to the robots through WiFi communication.
           </p>
           <h4 class="text-dark">Robot Design:</h4>
           <p class="text-justify" style="color: #555;">
@@ -102,6 +101,12 @@
             The control of the robot is done by utilizing the kinematic model of the robot. The setpoint for the
             goalkeeper's control system is generated based on the location of the ball found using overhead
             camera.
+          </p>
+          <h4 class="text-dark">Navigation:</h4>
+          <p class="text-justify" style="color: #555;">
+            Navigation for each robot is done by using a high level planner to plan a global path and this is
+            followed by a piecewise polynomial trajectory optimization. The resultant trajectory is tracked using
+            a PID controller.
           </p>
           <h4 class="text-dark">Robot and Ball Localization:</h4>
           <p class="text-justify" style="color: #555;">
